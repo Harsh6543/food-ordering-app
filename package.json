@@ -1,7 +1,12 @@
 {
+  "name": "food-ordering-app",
+  "version": "0.1.0",
+  "homepage": "https://harsh6543.github.io/food-ordering-app/",
+  "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^8.9.2",
     "razorpay": "^2.9.6",
     "react-router-dom": "^7.9.5"
   }
 }
+  

@@ -16,27 +16,32 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node.js
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-      - name: Install dependencies
-        run: cd reactharshapp && npm install
-      - name: Build
-        run: cd reactharshapp && npm run build
+          node-version: 18
+          cache: 'yarn'
+
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v4
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build project
+        run: yarn build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './reactharshapp/build'
+          path: ./build   # ✅ THIS IS YOUR FIX
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

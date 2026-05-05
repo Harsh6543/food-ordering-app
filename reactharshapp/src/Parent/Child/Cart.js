@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 
 const Cart = ({cart, addToCart, decrease, handleOrder}) => { 
 
@@ -6,11 +6,11 @@ const Cart = ({cart, addToCart, decrease, handleOrder}) => {
 
   return (
     <>
-      <div className="cart-container">
+      <div className="cart-container"> 
 
         <div className="cart-summary">
             <h3>Total: ₹{totalAmount}</h3>
-            <button className="order-btn" onClick={() => handleOrder(totalAmount)}>
+            <button className="order-btn" onClick={() => handleOrder(totalAmount)}> 
                 Place Order Now
             </button>
         </div>

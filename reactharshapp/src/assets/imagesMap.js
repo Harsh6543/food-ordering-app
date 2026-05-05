@@ -6,8 +6,8 @@ import veg from "./images/Mix Veg Curry.png"
 import bharta from "./images/Baingan Bharta.png"
 import makhni from "./images/Dal Makhni.png"
 import kofta from "./images/Malai Kofta.png"
-import shahi from "./images/Shahi Paneer.png" 
-
+import shahi from "./images/Shahi Paneer.png"  
+ 
 const imagesMap = {
     bread,
     sandwich,

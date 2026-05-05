@@ -1,15 +1,16 @@
 import './ResturantMap.css'
-import './Cart.css'
-import MenuCard from '../MenuCard'   
-import Cart from '../Cart.js'
+import './Cart.css' 
+import Cart from './Cart.js'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom' 
+
+import MenuCard from './MenuCard.js'  
  
- const ResturantMap = ({menuData}) => { 
+ const ResturantMap = ({menuData}) => {  
     
     menuData = [ 
       {
-        id: 1,
+        id: 1, 
         elementName: "Bread Butter",  
         category: "Breakfast",
         price: "75",

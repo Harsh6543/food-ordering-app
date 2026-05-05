@@ -1,13 +1,13 @@
 //import React from 'react'
 import {useState} from 'react'  /*import {usestate}*/
 import {useNavigate} from 'react-router-dom'
-import imagesMap from '../assets/imagesMap.js'
+import imagesMap from '../../assets/imagesMap.js'  
  
  
     const MenuCard = ({number, elementName, price, image, description,item, addToCart}) => {
-        const [showMore, setShowMore] = useState(false);        /*create state --> true/false */  
+        const [showMore, setShowMore] = useState(false);         /*create state --> true/false */  
         
-        const navigate = useNavigate(); 
+        const navigate = useNavigate();  
           
   return (
     <>
@@ -19,7 +19,7 @@ import imagesMap from '../assets/imagesMap.js'
             </div>          
             
 
-
+ 
             <h1>{elementName}</h1>
             <img src= {imagesMap[image]} alt={elementName} /> 
 

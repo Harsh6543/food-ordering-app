@@ -5,7 +5,7 @@ import "./PaymentPage.css";
 const PaymentPage = () => {
 
   const location = useLocation();
-  const price = location.state?.total||0;  
+  const price = location.state?.total||0;    
 
   const [upi, setUpi] = useState("")
  

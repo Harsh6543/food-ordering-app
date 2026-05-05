@@ -32,15 +32,17 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
+        working-directory: ./reactharshapp
         run: yarn install --frozen-lockfile
 
       - name: Build project
+        working-directory: ./reactharshapp
         run: yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build  
+          path: ./reactharshapp/build 
 
       - name: Deploy to GitHub Pages
         id: deployment

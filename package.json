@@ -6,7 +6,10 @@
   "dependencies": {
     "@paypal/react-paypal-js": "^8.9.2",
     "razorpay": "^2.9.6",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.5" 
+  },
+  "scripts": {
+    "build": "yarn --cwd reactharshapp build"
   }
 }
   

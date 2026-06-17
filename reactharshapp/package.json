@@ -1,7 +1,6 @@
 {
   "name": "reactharshapp",
   "version": "0.1.0",
-  "homepage": "https://harsh6543.github.io/food-ordering-app/",
   "private": true,
   "homepage": "https://harsh6543.github.io/food-ordering-app",
   "dependencies": {
